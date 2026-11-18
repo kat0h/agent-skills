@@ -1,0 +1,12 @@
+% Shared crop helpers (prepare.sh copies this file into the work dir).
+% #file is a per-crop PDF crops/<key>.pdf made by lib/crops.py: page 1 has the size and coordinates
+% of the original page; everything outside the crop box is removed and the remaining text outlined.
+% Coordinates are pt (= bp) with a top-left origin, as in mutool's stext.
+% The document sets the original page height:  \def\PH{792}  (A4: 841.89, the default here)
+\providecommand\PH{841.89}
+\usepackage{graphicx}
+% \crop[scale]{file}{x0}{y0}{x1}{y1}
+\newcommand\crop[6][1]{\includegraphics[scale=#1,page=1,clip,
+  viewport={#3} {\fpeval{\PH-(#6)}} {#5} {\fpeval{\PH-(#4)}}]{#2}}
+% \icrop[scale]{file}{x0}{y0}{x1}{y1}{base}: inline, original baseline on our baseline
+\newcommand\icrop[7][1]{\raisebox{\fpeval{(#1)*((#7)-(#6))}bp}{\crop[#1]{#2}{#3}{#4}{#5}{#6}}}
