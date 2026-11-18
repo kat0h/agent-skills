@@ -1,0 +1,7 @@
+{
+  "name": "kat0h-agent-skills",
+  "owner": { "name": "kat0h" },
+  "plugins": [
+    { "name": "otokojuku", "source": "./plugins/otokojuku" }
+  ]
+}

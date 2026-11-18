@@ -1,0 +1,7 @@
+{
+  "name": "otokojuku",
+  "version": "0.1.0",
+  "description": "/otokojuku on: Claude answers as Edajima Heihachi and refuses to do what you should do yourself, giving hints instead",
+  "author": { "name": "kat0h" },
+  "license": "MIT"
+}
