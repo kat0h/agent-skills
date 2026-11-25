@@ -1,0 +1,7 @@
+{
+  "name": "translate-pdf",
+  "version": "0.1.0",
+  "description": "Translate an English TeX-made paper or thesis PDF into Japanese with PLaMo 3 Translate and re-typeset it with XeLaTeX, keeping code, math and figures from the original",
+  "author": { "name": "kat0h" },
+  "license": "MIT"
+}

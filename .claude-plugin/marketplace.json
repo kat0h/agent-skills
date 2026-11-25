@@ -1,7 +1,11 @@
 {
   "name": "kat0h-agent-skills",
   "owner": { "name": "kat0h" },
+  "description": "kat0h の Claude Code 用プラグイン集 (PLaMo 翻訳、VOICEVOX 読み上げ、PDF 翻訳、男塾)",
   "plugins": [
-    { "name": "otokojuku", "source": "./plugins/otokojuku" }
+    { "name": "plamo-ja", "source": "./plugins/plamo" },
+    { "name": "voicevox", "source": "./plugins/voicevox" },
+    { "name": "otokojuku", "source": "./plugins/otokojuku" },
+    { "name": "translate-pdf", "source": "./plugins/translate-pdf" }
   ]
 }
